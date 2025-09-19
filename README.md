@@ -60,7 +60,7 @@ After you retrieve all views count you will need to merge data from `songurls` a
 
 Notice, that you can just run all cells inside `views.ipynb` and it will do all the work automatically in sequential order if no problems will occure.
 
-_You can find dataset example at [Kaggle](https://www.kaggle.com/datasets/amiadesu/vocadbsongs)_
+_You can find dataset example at ~~[Kaggle](https://www.kaggle.com/datasets/amiadesu/vocadbsongs)~~ (temporary unavailable), [HuggingFace](https://huggingface.co/datasets/amiadesu/VocaDBSongs)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
