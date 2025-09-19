@@ -1,3 +1,6 @@
+"""
+The code here was taken from https://github.com/lihaohong6/VLW-bot
+"""
 import re
 
 table = 'fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
