@@ -1,0 +1,5 @@
+aiohttp==3.12.13
+python-dotenv==1.1.1
+SQLAlchemy==2.0.43
+psycopg==3.2.10
+tqdm==4.66.5
