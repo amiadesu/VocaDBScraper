@@ -1,6 +1,8 @@
 import asyncio
 import dotenv
 import os
+import sys
+from tqdm import tqdm
 
 from scrapers.vocaDBScraper import VocaDBScraper
 
@@ -19,8 +21,10 @@ async def main():
     """
     scraper = VocaDBScraper(os.environ["DB_URL"])
 
-    await scraper.run()
+    with tqdm(desc="Fetching data from VocaDB") as pbar:
+        await scraper.run(pbar=pbar)
 
 if __name__ == "__main__":
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    if sys.platform.startswith("win"):
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     asyncio.run(main())
